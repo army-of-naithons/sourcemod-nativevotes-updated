@@ -1257,7 +1257,8 @@ public Action Timer_ChangeMap(Handle hTimer, DataPack dp)
 	else
 	{
 		dp.Reset();
-		dp.ReadString(map, sizeof(map));		
+		dp.ReadString(map, sizeof(map));
+		SetNextMap(map);
 	}
 
 	ForceChangeLevel(map, "Map Vote");
